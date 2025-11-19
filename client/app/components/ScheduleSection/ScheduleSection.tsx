@@ -4,7 +4,7 @@ export default function TracksSection() {
   return (
     <section id="schedule" style={{ padding: '80px 20px', backgroundColor: '#d4f1f4', minHeight: '100vh' }}>
       <h2 style={{ 
-        fontSize: '64px', 
+        fontSize: 'clamp(40px, 6vw, 64px)', 
         fontWeight: '700',
         marginBottom: '80px', 
         color: '#16213e',
@@ -15,23 +15,23 @@ export default function TracksSection() {
       
       <div style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', 
         maxWidth: '1400px', 
         margin: '0 auto', 
-        gap: '60px',
-        padding: '0 40px'
+        gap: 'clamp(30px, 5vw, 60px)',
+        padding: '0 clamp(10px, 4vw, 40px)'
       }}>
         {/* Saturday */}
         <div>
           <h3 style={{ 
-            fontSize: '36px', 
+            fontSize: 'clamp(18px, 5vw, 36px)', 
             fontWeight: '600',
-            marginBottom: '40px', 
+            marginBottom: 'clamp(20px, 4vw, 40px)', 
             color: '#16213e' 
           }}>
             Saturday, April 18th
           </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
             <ScheduleItem time="9:30AM – 11:00AM" event="Hacker Check-In" />
             <ScheduleItem time="11:00AM – 12:40PM" event="Opening Ceremony" />
             <ScheduleItem time="12:30PM – 2:30PM" event="Lunch" />
@@ -44,14 +44,14 @@ export default function TracksSection() {
         {/* Sunday */}
         <div>
           <h3 style={{ 
-            fontSize: '36px', 
+            fontSize: 'clamp(18px, 5vw, 36px)', 
             fontWeight: '600',
-            marginBottom: '40px', 
+            marginBottom: 'clamp(20px, 4vw, 40px)', 
             color: '#16213e' 
           }}>
             Sunday, April 19th
           </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
             <ScheduleItem time="9:00AM – 10:00AM" event="Breakfast" />
             <ScheduleItem time="10:30AM" event="Submissions Due!" />
             <ScheduleItem time="11:30AM – 3:00PM" event="Judging" />
@@ -70,23 +70,32 @@ function ScheduleItem({ time, event }: { time: string; event: string }) {
       display: 'flex', 
       justifyContent: 'space-between',
       alignItems: 'center',
-      gap: '40px'
+      gap: 'clamp(6px, 4vw, 40px)', // Increased vw for more proportional scaling
+      flexWrap: 'nowrap',
+      width: '100%'
     }}>
       <span style={{ 
-        fontSize: '30px', 
+        fontSize: 'clamp(9px, 4.5vw, 30px)', // Lower minimum, higher vw percentage
         color: '#16213e',
         fontWeight: '400',
-        minWidth: '220px',
-        textAlign: 'left'
+        flexShrink: 1,
+        flexBasis: 'auto',
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis'
       }}>
         {time}
       </span>
       <span style={{ 
-        fontSize: '25px', 
+        fontSize: 'clamp(9px, 4vw, 25px)', // Lower minimum, higher vw percentage
         color: '#16213e',
         fontWeight: '600',
-        flex: 1,
-        textAlign: 'right'
+        flexShrink: 1,
+        flexBasis: 'auto',
+        textAlign: 'right',
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis'
       }}>
         {event}
       </span>

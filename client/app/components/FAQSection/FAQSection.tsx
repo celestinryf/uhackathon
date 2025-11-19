@@ -5,24 +5,28 @@ import { useState } from 'react';
 export default function FAQSection() {
   const leftColumnFaqs = [
     {
-      question: "What is a hackathon?",
+      question: "What is UHackathon?",
       answer: "A hackathon is an event where students come together to build creative projects over a short period of time. It's a great opportunity to learn new skills, meet other developers, and bring your ideas to life!"
     },
     {
+      question: "What is D1 and D2?",
+      answer: "D1 is for more experienced individuals. Graduates and industry professionals are forced into this category, and anyone else is free to compete here as well. D2 is for those less-experienced, like undergraduates and high schoolers."
+    },
+    {
       question: "When do applications close?",
-      answer: "Applications close on [date]. Make sure to submit your application before the deadline!"
+      answer: "They don't! You can come without registering, but it helps increase our funding, hence incresing the prize money!"
     },
     {
-      question: "Is attending DubHacks free?",
-      answer: "Yes! Attending DubHacks is completely free. We provide meals, snacks, and swag throughout the event."
+      question: "Is attending free?",
+      answer: "Yes! Attending is completely free. We provide meals, snacks, and swag throughout the event."
     },
     {
-      question: "How big are the teams? Can I apply as a team?",
-      answer: "Teams can be up to 4 people. You can apply individually and form teams at the event, or apply as a pre-formed team."
+      question: "How big are the teams?",
+      answer: "Teams can be up to 4 people."
     },
     {
       question: "Do I have to select a track for my project?",
-      answer: "No, tracks are optional! You can choose to submit your project to a specific track or compete in the general category."
+      answer: "Yes, we have split up the event, so it does matter what track you choose as it will change who judges you and there is no general track."
     },
     {
       question: "What will I eat?",
@@ -31,25 +35,17 @@ export default function FAQSection() {
     {
       question: "What if I need special accommodations?",
       answer: "Please let us know in your application or email us at [email] and we'll do our best to accommodate your needs."
-    },
-    {
-      question: "Does DubHacks offer travel reimbursement?",
-      answer: "Travel reimbursement information will be provided to accepted participants."
-    },
-    {
-      question: "I haven't heard back about my application!",
-      answer: "Decisions are sent out in waves. If you haven't heard back yet, please be patient! You can email us at [email] if you have concerns."
     }
   ];
 
   const rightColumnFaqs = [
     {
       question: "Am I eligible to attend?",
-      answer: "All current college and university students are eligible to attend, regardless of major or experience level!"
+      answer: "Everyone regardless of experience is welcome! We have D1 and D2 to keep competition fair. Industry professionals and graduates are forced into D1, whereas D2 is undergraduate students."
     },
     {
-      question: "Is DubHacks fully in-person this year?",
-      answer: "Yes, DubHacks will be fully in-person this year at [location]."
+      question: "Is UHackathon fully in-person this year?",
+      answer: "Yes, UHackathon will be fully in-person this year at [TBD, but in Tacoma]."
     },
     {
       question: "What if I don't know how to code?",
@@ -65,55 +61,48 @@ export default function FAQSection() {
     },
     {
       question: "Is sleeping space provided?",
-      answer: "Yes, we'll have designated quiet spaces for sleeping. Bring a sleeping bag and pillow if you plan to stay overnight!"
+      answer: "No, unfortunatly due to rules of all venues in the area there is no sleeping or staying allowed. Attendees will have to go home and come back the next day."
     },
     {
       question: "What is the code of conduct?",
       answer: "All participants must follow the MLH Code of Conduct. We're committed to providing a safe and inclusive environment for everyone."
-    },
-    {
-      question: "What's the difference between the priority application and the regular application?",
-      answer: "Priority applications are reviewed first and receive earlier admission decisions. Regular applications are reviewed after the priority deadline."
-    },
-    {
-      question: "404: Question Not Found",
-      answer: "Can't find what you're looking for? Email us at [email] and we'll help you out!"
     }
   ];
 
   return (
     <section id="faq" style={{ 
-      padding: '80px 20px', 
+      padding: 'clamp(40px, 8vw, 80px) clamp(15px, 3vw, 20px)', 
       backgroundColor: '#2d4059', 
       minHeight: '100vh' 
     }}>
       <h2 style={{ 
-        fontSize: '64px', 
+        fontSize: 'clamp(36px, 7vw, 64px)', 
         fontWeight: '700',
-        marginBottom: '20px', 
+        marginBottom: '15px', 
         color: '#ffffff',
         textAlign: 'center',
-        letterSpacing: '2px'
+        letterSpacing: 'clamp(1px, 0.2vw, 2px)'
       }}>
         FAQs
       </h2>
       
       <p style={{
-        fontSize: '24px',
+        fontSize: 'clamp(16px, 3vw, 24px)',
         color: '#e8e8e8',
         textAlign: 'center',
-        marginBottom: '60px'
+        marginBottom: 'clamp(25px, 4vw, 50px)',
+        padding: '0 10px'
       }}>
         Questions? Explore some answers below
       </p>
 
       <div style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', 
         maxWidth: '1400px', 
         margin: '0 auto', 
-        gap: '40px',
-        padding: '0 40px'
+        gap: 'clamp(15px, 3vw, 30px)',
+        padding: '0 clamp(15px, 4vw, 40px)'
       }}>
         <div>
           {leftColumnFaqs.map((faq, index) => (
@@ -137,8 +126,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   return (
     <div style={{ 
       borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-      paddingBottom: '20px',
-      marginBottom: '20px'
+      paddingBottom: 'clamp(10px, 1.5vw, 15px)',
+      marginBottom: 'clamp(10px, 1.5vw, 15px)'
     }}>
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -147,25 +136,30 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          gap: '8px',
           background: 'none',
           border: 'none',
           color: '#ffffff',
-          fontSize: '18px',
+          fontSize: 'clamp(14px, 2.5vw, 18px)',
           fontWeight: '400',
           textAlign: 'left',
           cursor: 'pointer',
-          padding: '8px 0',
+          padding: '4px 0',
           transition: 'opacity 0.2s'
         }}
         onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
         onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
       >
-        <span>{question}</span>
+        <span style={{
+          flex: 1,
+          paddingRight: '8px',
+          wordBreak: 'break-word'
+        }}>{question}</span>
         <span style={{ 
-          fontSize: '14px',
+          fontSize: 'clamp(12px, 2vw, 14px)',
           transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
           transition: 'transform 0.3s',
-          marginLeft: '12px'
+          flexShrink: 0
         }}>
           ▼
         </span>
@@ -173,11 +167,11 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       
       {isOpen && (
         <div style={{
-          marginTop: '16px',
-          fontSize: '16px',
+          marginTop: 'clamp(8px, 1.5vw, 12px)',
+          fontSize: 'clamp(13px, 2.2vw, 16px)',
           color: '#d0d0d0',
           lineHeight: '1.6',
-          paddingRight: '20px'
+          paddingRight: 'clamp(8px, 1.5vw, 15px)'
         }}>
           {answer}
         </div>

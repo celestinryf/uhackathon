@@ -1,5 +1,5 @@
-"use client"; // at the very top 
-export const dynamic = 'force-dynamic'; // optional, forces Next.js to treat as dynamic
+"use client";
+export const dynamic = 'force-dynamic';
 
 import NavBar from './components/NavBar/NavBar';
 import HeroSection from './components/HeroSection/HeroSection';
@@ -11,7 +11,13 @@ import Form from './components/Form/Form';
 
 export default function Page() {
   return (
-    <div style={{ fontFamily: "'Work Sans', sans-serif", color: '#fff', position: 'relative' }}>
+    <div style={{ 
+      fontFamily: "'Work Sans', sans-serif", 
+      color: '#fff', 
+      position: 'relative',
+      overflowX: 'hidden',  // Add this
+      width: '100%'          // Add this
+    }}>
       <NavBar />
       <div id="hero"><HeroSection /></div>
       <div id="about"><AboutSection /></div>

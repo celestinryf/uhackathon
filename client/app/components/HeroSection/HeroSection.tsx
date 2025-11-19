@@ -1,8 +1,14 @@
 "use client";
 
-import BigName from '../BigName/BigName';
-
 export default function HeroSection() {
+  const scrollToForm = () => {
+    const el = document.getElementById("form");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", "#form");
+    }
+  };
+
   return (
     <section
       id="hero"
@@ -10,25 +16,113 @@ export default function HeroSection() {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
-        padding: '60px 40px',
+        padding: '10vh 5vw',
         background: 'linear-gradient(135deg, #6b0f1a, #b91372)',
         position: 'relative',
+        textAlign: "center",
       }}
     >
-      <div style={{ maxWidth: '600px', textAlign: 'left', alignSelf: 'flex-end', marginRight: '20%', marginTop: '20%' }}>
-        <h2 style={{ fontSize: '36px', marginBottom: '20px', color: '#f0e6f6' }}>
+      {/* STACKED CONTENT */}
+      <div style={{ zIndex: 2 }}>
+        <h1
+          style={{
+            fontFamily: "'Horizon', sans-serif",
+            fontSize: "7vw",
+            fontWeight: 900,
+            color: "#f0e6f6",
+            lineHeight: "0.9",
+            WebkitTextStroke: "0.5vw",
+            transform: "scaleX(1.6) scaleY(0.9)",
+            transformOrigin: "center",
+          }}
+        >
+          UHACKATHON
+        </h1>
+
+        <h2
+          style={{
+            fontSize: "2vw",
+            color: "#f0e6f6",
+            fontFamily: "'Poppins', sans-serif",
+            transform: "scaleX(1.25)",
+            transformOrigin: "center",
+            fontWeight: 600,
+            marginTop: "2vh",
+          }}
+        >
           April 18 - 19, 2026
         </h2>
-        <p style={{ fontSize: '19px', color: '#f0e6f6' }}>
+
+        <p
+          style={{
+            fontSize: "1vw",
+            color: "#f0e6f6",
+            fontFamily: "'Poppins', sans-serif",
+            transform: "scaleX(1.25)",
+            transformOrigin: "center",
+            fontWeight: 300,
+            marginTop: "1vh",
+          }}
+        >
           University of Washington, Tacoma
         </p>
       </div>
 
-      <div style={{ width: "100%", position: "absolute", bottom: "0" }}>
-        <BigName names={["UHACKATHON"]} speed={80} className="text-white" />
-      </div>
+      {/* Register Button */}
+      <button
+        onClick={scrollToForm}
+        style={{
+          position: 'absolute',
+          bottom: '5vh',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          border: 'none',
+          color: '#fff',
+          padding: '12px 24px',
+          fontSize: 'clamp(14px, 1.2vw, 18px)',
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 500,
+          borderRadius: '30px',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          transition: 'all 0.3s ease',
+          backdropFilter: 'blur(10px)',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+          e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+          e.currentTarget.style.transform = 'translateX(-50%) translateY(0)';
+        }}
+      >
+        Register Here
+        <span style={{
+          fontSize: '20px',
+          lineHeight: '1',
+          animation: 'bounce 2s infinite',
+        }}>
+          ⌄
+        </span>
+      </button>
+
+      {/* Bounce animation */}
+      <style jsx>{`
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(-4px);
+          }
+          50% {
+            transform: translateY(0px);
+          }
+        }
+      `}</style>
     </section>
   );
 }

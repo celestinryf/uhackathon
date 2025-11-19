@@ -7,7 +7,7 @@ export default function TracksSection() {
       color: "#a8e6cf",
       darkColor: "#56ab91",
       division: 1,
-      title: "The Inventor",
+      title: "All-Star",
       tagline: "I play out of the sandbox, always innovating, and ideating something new.",
       description: "Some problems need a bold idea, and an even bolder build. This track is your playground for innovation! The most unconventional ideas are welcome, as long as they're solving real problems.",
       fullDescription: "Whether you're pushing the boundaries of AI or pioneering something new, connect imagination with technical ingenuity. The Inventor champions projects that embrace experimentation, harness emerging technologies, and challenge the norm.",
@@ -18,7 +18,7 @@ export default function TracksSection() {
       color: "#dcc6e0",
       darkColor: "#9b7ea6",
       division: 2,
-      title: "The Advocate",
+      title: "The Rookie",
       tagline: "My blanket forts welcome all, where playing together means growing together.",
       description: "Powerful solutions bring us closer and help us thrive. This track celebrates technology's role in strengthening our ties to each other, our communities, and the world around us, while also empowering ourselves.",
       fullDescription: "It's human-centered and fosters belonging, bridges gaps, and unlocks personal and collective growth. The Advocate builds tools that unite, uplift, and drive positive, lasting change.",
@@ -33,7 +33,7 @@ export default function TracksSection() {
           perspective: 1000px;
           width: 100%;
           max-width: 450px;
-          height: 40vw;
+          height: 650px;
         }
         
         .card-flipper {
@@ -78,7 +78,7 @@ export default function TracksSection() {
           color: white;
           padding: 8px 20px;
           border-radius: 8px;
-          font-size: 24px;
+          font-size: clamp(18px, 2vw, 28px);
           font-weight: bold;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -86,19 +86,19 @@ export default function TracksSection() {
         }
         
         .card-icon {
-          font-size: 80px;
+          font-size: clamp(50px, 6vw, 80px);
           margin: 20px 0;
         }
         
         .card-title {
-          font-size: 32px;
+          font-size: clamp(24px, 4vw, 32px);
           font-weight: bold;
           color: #1a1a2e;
           margin: 20px 0 12px 0;
         }
         
         .card-tagline {
-          font-size: 20px;
+          font-size: clamp(14px, 2vw, 20px);
           color: #2a2a3e;
           line-height: 1.5;
           font-weight: 400;
@@ -111,7 +111,7 @@ export default function TracksSection() {
         
         .card-back-content {
           text-align: left;
-          font-size: 16px;
+          font-size: clamp(14px, 1.8vw, 16px);
           line-height: 1.6;
           color: #2a2a3e;
         }
@@ -135,17 +135,20 @@ export default function TracksSection() {
           font-weight: bold;
           margin-bottom: 8px;
           color: #1a1a2e;
+          font-size: clamp(14px, 1.5vw, 16px);
         }
         
         .topics-list {
           font-style: italic;
           color: #3a3a4e;
           line-height: 1.5;
+          font-size: clamp(12px, 1.4vw, 14px);
         }
         
         @media (max-width: 968px) {
           .tracks-grid {
             grid-template-columns: 1fr !important;
+            justify-items: center;
           }
         }
         
@@ -154,22 +157,14 @@ export default function TracksSection() {
             max-width: 380px;
             height: 500px;
           }
-          
-          .card-title {
-            font-size: 28px;
-          }
-          
-          .card-icon {
-            font-size: 60px;
-          }
         }
       `}</style>
       
       <div style={{ maxWidth: '1200px', margin: '0 auto 60px auto', textAlign: 'left' }}>
-        <h2 style={{ fontSize: '3vw', marginBottom: '0px', color: '#16213e', fontWeight: 'bold' }}>
+        <h2 style={{ fontSize: 'clamp(25px, 3vw, 40px)', marginBottom: '0px', color: '#16213e', fontWeight: 'bold' }}>
           Tracks
         </h2>
-        <p style={{ fontSize: '1.5vw', color: '#16213e', marginBottom: '50px' }}>
+        <p style={{ fontSize: 'clamp(18px, 1.5vw, 25px)', color: '#16213e', marginBottom: '50px' }}>
           Participants will have the opportunity to create projects based on their skillset with ranked tracks:
         </p>
       </div>

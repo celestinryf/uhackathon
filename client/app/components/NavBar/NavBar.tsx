@@ -36,8 +36,10 @@ export default function NavBar() {
   return (
     <nav
       style={{
-        position: "sticky",
+        position: "fixed", // Changed from sticky to fixed
         top: 0,
+        left: 0, // Add left: 0
+        right: 0, // Add right: 0
         zIndex: 1000,
         width: "100%",
         backgroundColor: "rgba(0,0,0,0.7)",
@@ -46,7 +48,6 @@ export default function NavBar() {
         justifyContent: "center",
         gap: "40px",
         padding: "20px 0",
-        marginBottom: "-63px",
         fontSize: "16px",
         fontWeight: 600,
         color: "#fff",
