@@ -25,7 +25,7 @@ export default function AboutSection() {
           zIndex: 10,
           textAlign: "center",
           paddingTop: "5vh",
-          fontSize: "clamp(2.5rem, 6vw, 6rem)", // Won't go below 2.5rem
+          fontSize: "clamp(2rem, 6vw, 6rem)", // Won't go below 2.5rem
           fontWeight: 800,
           textShadow: "0 0.25rem 0.75rem rgba(0,0,0,0.45)",
           marginBottom: "15vh",

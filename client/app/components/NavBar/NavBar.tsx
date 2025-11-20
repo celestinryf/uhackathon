@@ -36,21 +36,22 @@ export default function NavBar() {
   return (
     <nav
       style={{
-        position: "fixed", // Changed from sticky to fixed
+        position: "fixed",
         top: 0,
-        left: 0, // Add left: 0
-        right: 0, // Add right: 0
+        left: 0,
+        right: 0,
         zIndex: 1000,
         width: "100%",
         backgroundColor: "rgba(0,0,0,0.7)",
         backdropFilter: "blur(10px)",
         display: "flex",
         justifyContent: "center",
-        gap: "40px",
-        padding: "20px 0",
-        fontSize: "16px",
+        gap: "clamp(8px, 3vw, 40px)", // Responsive gap: 8px min, 40px max
+        padding: "clamp(12px, 2vh, 20px) clamp(10px, 2vw, 0)", // Responsive padding
+        fontSize: "clamp(12px, 2vw, 16px)", // Responsive font: 12px min, 16px max
         fontWeight: 600,
         color: "#fff",
+        flexWrap: "wrap", // Allow wrapping on very small screens
       }}
     >
       {navItems.map((item) => (
@@ -68,6 +69,7 @@ export default function NavBar() {
             cursor: "pointer",
             transition: "color 0.2s",
             textDecoration: "none",
+            whiteSpace: "nowrap", // Prevent text wrapping within links
           }}
           onMouseEnter={(e) => (e.currentTarget.style.color = "#ff79c6")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "#fff")}
