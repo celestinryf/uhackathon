@@ -73,7 +73,7 @@ export default function FAQSection() {
     <section id="faq" style={{ 
       padding: 'clamp(40px, 8vw, 80px) clamp(15px, 3vw, 20px)', 
       backgroundColor: '#2d4059', 
-      minHeight: '100vh' 
+      minHeight: '80vh' 
     }}>
       <h2 style={{ 
         fontSize: 'clamp(36px, 7vw, 64px)', 
