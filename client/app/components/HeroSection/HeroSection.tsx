@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         <h2
           style={{
-            fontSize: "3vw",
+            fontSize: "2vw",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",
@@ -57,7 +57,7 @@ export default function HeroSection() {
 
         <p
           style={{
-            fontSize: "2vw",
+            fontSize: "1vw",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",

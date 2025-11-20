@@ -46,12 +46,12 @@ export default function NavBar() {
         backdropFilter: "blur(10px)",
         display: "flex",
         justifyContent: "center",
-        gap: "clamp(8px, 3vw, 40px)", // Responsive gap: 8px min, 40px max
-        padding: "clamp(12px, 2vh, 20px) clamp(10px, 2vw, 0)", // Responsive padding
-        fontSize: "clamp(12px, 2vw, 16px)", // Responsive font: 12px min, 16px max
+        gap: "clamp(8px, 3vw, 40px)",
+        padding: "20px 0",
+        fontSize: "clamp(12px, 2vw, 16px)",
         fontWeight: 600,
         color: "#fff",
-        flexWrap: "wrap", // Allow wrapping on very small screens
+        flexWrap: "wrap",
       }}
     >
       {navItems.map((item) => (
@@ -69,7 +69,7 @@ export default function NavBar() {
             cursor: "pointer",
             transition: "color 0.2s",
             textDecoration: "none",
-            whiteSpace: "nowrap", // Prevent text wrapping within links
+            whiteSpace: "nowrap",
           }}
           onMouseEnter={(e) => (e.currentTarget.style.color = "#ff79c6")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "#fff")}
