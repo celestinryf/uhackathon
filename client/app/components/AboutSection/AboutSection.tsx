@@ -7,7 +7,7 @@ export default function AboutSection() {
     <section
       id="about"
       style={{
-        minHeight: "110vh",
+        minHeight: "100vh",
         padding: "0",
         margin: "0",
         backgroundImage: `url(${uhackstats.src})`,
