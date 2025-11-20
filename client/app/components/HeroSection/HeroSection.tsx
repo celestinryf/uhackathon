@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         <h2
           style={{
-            fontSize: "clamp(13px, 1.5vw, 40px)",
+            fontSize: "clamp(15px, 1.5vw, 40px)",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",
@@ -57,7 +57,7 @@ export default function HeroSection() {
 
         <p
           style={{
-            fontSize: "clamp(9px, 1.5vw, 22px)",
+            fontSize: "clamp(12px, 1.5vw, 22px)",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",
