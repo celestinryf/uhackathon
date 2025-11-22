@@ -29,15 +29,14 @@ export default function TracksSection() {
             marginBottom: 'clamp(20px, 4vw, 40px)', 
             color: '#16213e' 
           }}>
-            Saturday, April 18th
+            Saturday
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
-            <ScheduleItem time="9:30AM – 11:00AM" event="Hacker Check-In" />
-            <ScheduleItem time="11:00AM – 12:40PM" event="Opening Ceremony" />
+            <ScheduleItem time="9:00AM – 10:00AM" event="Check-In" />
+            <ScheduleItem time="10:00AM – 10:30AM" event="Opening Ceremony" />
             <ScheduleItem time="12:30PM – 2:30PM" event="Lunch" />
             <ScheduleItem time="1:30PM – 4:15PM" event="Workshops" />
-            <ScheduleItem time="3:30PM – 5:00PM" event="Career Fair" />
-            <ScheduleItem time="5:30PM – 7:00PM" event="Dinner" />
+            <ScheduleItem time="5:00PM – 6:00PM" event="Dinner" />
           </div>
         </div>
 
@@ -49,14 +48,14 @@ export default function TracksSection() {
             marginBottom: 'clamp(20px, 4vw, 40px)', 
             color: '#16213e' 
           }}>
-            Sunday, April 19th
+            Sunday
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
             <ScheduleItem time="9:00AM – 10:00AM" event="Breakfast" />
-            <ScheduleItem time="10:30AM" event="Submissions Due!" />
-            <ScheduleItem time="11:30AM – 3:00PM" event="Judging" />
-            <ScheduleItem time="11:00AM – 2:30PM" event="Lunch" />
-            <ScheduleItem time="3:15PM – 4:00PM" event="Closing Ceremony" />
+            <ScheduleItem time="1:30PM" event="Submissions Due!" />
+            <ScheduleItem time="1:30PM – 3:30PM" event="Judging" />
+            <ScheduleItem time="11:00AM – 1:30PM" event="Lunch" />
+            <ScheduleItem time="3:30PM – 4:30PM" event="Closing Ceremony" />
           </div>
         </div>
       </div>

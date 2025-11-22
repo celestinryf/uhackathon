@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         <h2
           style={{
-            fontSize: "clamp(15px, 1.5vw, 40px)",
+            fontSize: "clamp(18px, 1.5vw, 40px)",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",
@@ -52,12 +52,12 @@ export default function HeroSection() {
             marginTop: "2vh",
           }}
         >
-          April 18 - 19, 2026
+          April, 2026
         </h2>
 
         <p
           style={{
-            fontSize: "clamp(12px, 1.5vw, 22px)",
+            fontSize: "clamp(14px, 1.5vw, 22px)",
             color: "#f0e6f6",
             fontFamily: "'Poppins', sans-serif",
             transform: "scaleX(1.25)",
@@ -116,10 +116,10 @@ export default function HeroSection() {
       <style jsx>{`
         @keyframes bounce {
           0%, 100% {
-            transform: translateY(-4px);
+            transform: translateY(-8px);
           }
           50% {
-            transform: translateY(0px);
+            transform: translateY(-4px);
           }
         }
       `}</style>
