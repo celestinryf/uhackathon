@@ -24,7 +24,7 @@ export default function Page() {
       <div id="about"><AboutSection /></div>
       <div id="tracks"><TracksSection /></div>
       <div id="schedule"><ScheduleSection /></div>
-      <div id="schedule"><Sponsor /></div>
+      <div id="sponsor"><Sponsor /></div>
       <div id="faq"><FAQSection /></div>
       <div id="form"><Form /></div>
     </div>

@@ -82,7 +82,7 @@ export default function FormSelector() {
           style={{
             display: 'grid',
             gap: '20px',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(18px, 1fr))',
           }}
         >
           {cards.map((card) => {
@@ -125,7 +125,7 @@ export default function FormSelector() {
                 >
                   <Icon size={40} color="#fff" />
                 </div>
-                <h2 style={{ fontSize: '18px', color: '#fff', margin: 0 }}>
+                <h2 style={{ fontSize: '16px', color: '#fff', margin: 0 }}>
                   {card.title}
                 </h2>
               </button>
