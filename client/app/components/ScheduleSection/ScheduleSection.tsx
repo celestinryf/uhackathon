@@ -54,7 +54,7 @@ export default function TracksSection() {
             <ScheduleItem time="9:00AM – 10:00AM" event="Breakfast" />
             <ScheduleItem time="1:30PM" event="Submissions Due!" />
             <ScheduleItem time="1:30PM – 3:30PM" event="Judging" />
-            <ScheduleItem time="11:00AM – 1:30PM" event="Lunch" />
+            <ScheduleItem time="1:30PM – 2:30PM" event="Lunch" />
             <ScheduleItem time="3:30PM – 4:30PM" event="Closing Ceremony" />
           </div>
         </div>
