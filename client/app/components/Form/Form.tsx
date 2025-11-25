@@ -125,7 +125,7 @@ export default function FormSelector() {
                 >
                   <Icon size={40} color="#fff" />
                 </div>
-                <h2 style={{ fontSize: '16px', color: '#fff', margin: 0 }}>
+                <h2 style={{ fontSize: 'clamp(12px, 3vw, 18px)', color: '#fff', margin: 0 }}>
                   {card.title}
                 </h2>
               </button>
