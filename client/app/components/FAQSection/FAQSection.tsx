@@ -66,6 +66,10 @@ export default function FAQSection() {
     {
       question: "What is the code of conduct?",
       answer: "All participants must follow the MLH Code of Conduct. We're committed to providing a safe and inclusive environment for everyone."
+    },
+    {
+      question: "Is there group registration?",
+      answer: "No, just have everyone in your group register individually and you can finalize your team when submitting on Devpost day-of."
     }
   ];
 
