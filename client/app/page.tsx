@@ -7,6 +7,7 @@ import AboutSection from './components/AboutSection/AboutSection';
 import TracksSection from './components/TracksSection/TracksSection';
 import FAQSection from './components/FAQSection/FAQSection';
 import ScheduleSection from './components/ScheduleSection/ScheduleSection';
+import Sponsor from './components/Sponsor/Sponsor';
 import Form from './components/Form/Form';
 
 export default function Page() {
@@ -23,6 +24,7 @@ export default function Page() {
       <div id="about"><AboutSection /></div>
       <div id="tracks"><TracksSection /></div>
       <div id="schedule"><ScheduleSection /></div>
+      <div id="schedule"><Sponsor /></div>
       <div id="faq"><FAQSection /></div>
       <div id="form"><Form /></div>
     </div>

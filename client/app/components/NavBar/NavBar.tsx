@@ -29,6 +29,7 @@ export default function NavBar() {
     { label: "About", id: "about" },
     { label: "Tracks", id: "tracks" },
     { label: "Schedule", id: "schedule" },
+    { label: "Sponsor", id: "sponsor" },
     { label: "FAQ", id: "faq" },
     { label: "Register", id: "form" },
   ];
