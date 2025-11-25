@@ -70,7 +70,7 @@ export default function FormSelector() {
       <div style={{ width: '100%', maxWidth: '690px', paddingTop: '10px' }}>
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
           <h1 style={{ fontSize: '28px', color: '#7dbaff', marginBottom: '10px' }}>
-            UHackathon @ UWT 2026
+            UHackathon @ UWT April 2026
           </h1>
           <p style={{ fontSize: '18px', marginBottom: '10px' }}>Choose your registration type</p>
           <div style={{ opacity: 0.6, fontSize: '14px' }}>
