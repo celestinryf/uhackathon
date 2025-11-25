@@ -141,7 +141,7 @@ export default function FormSelector() {
             opacity: 0.4,
           }}
         >
-          questions? contact us at uhackathon@uwt.edu
+          questions? contact us at celestinryf@gmail.com
         </div>
       </div>
     </section>
