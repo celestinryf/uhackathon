@@ -2,7 +2,7 @@
 
 export default function SponsorsSection() {
   return (
-    <section id="sponsor" style={{ padding: '80px 20px', backgroundColor: '#d4f1f4' }}>
+    <section id="sponsor" style={{ padding: '80px 20px' }}>
       <h2 style={{ 
         fontSize: 'clamp(40px, 6vw, 64px)', 
         fontWeight: '700',

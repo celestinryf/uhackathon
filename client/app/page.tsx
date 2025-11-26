@@ -22,9 +22,11 @@ export default function Page() {
       <NavBar />
       <div id="hero"><HeroSection /></div>
       <div id="about"><AboutSection /></div>
-      <div id="tracks"><TracksSection /></div>
-      <div id="schedule"><ScheduleSection /></div>
-      <div id="sponsor"><Sponsor /></div>
+      <div className="bg-[#d4f1f4]">
+        <div id="tracks"><TracksSection /></div>
+        <div id="schedule"><ScheduleSection /></div>
+        <div id="sponsor"><Sponsor /></div>
+      </div>
       <div id="faq"><FAQSection /></div>
       <div id="form"><Form /></div>
     </div>

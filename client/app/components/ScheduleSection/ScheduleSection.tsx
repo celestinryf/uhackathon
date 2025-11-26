@@ -2,7 +2,7 @@
 
 export default function TracksSection() {
   return (
-    <section id="schedule" style={{ padding: '80px 20px', backgroundColor: '#d4f1f4', paddingBottom: '200px'}}>
+    <section id="schedule" style={{ padding: '80px 20px', paddingBottom: '200px'}}>
       <h2 style={{ 
         fontSize: 'clamp(40px, 6vw, 64px)', 
         fontWeight: '700',
@@ -74,7 +74,7 @@ function ScheduleItem({ time, event }: { time: string; event: string }) {
       width: '100%'
     }}>
       <span style={{ 
-        fontSize: 'clamp(9px, 4.5vw, 30px)', // Lower minimum, higher vw percentage
+        fontSize: 'clamp18px, 2vw, 30px)', // Lower minimum, higher vw percentage
         color: '#16213e',
         fontWeight: '400',
         flexShrink: 1,
@@ -86,7 +86,7 @@ function ScheduleItem({ time, event }: { time: string; event: string }) {
         {time}
       </span>
       <span style={{ 
-        fontSize: 'clamp(9px, 4vw, 25px)', // Lower minimum, higher vw percentage
+        fontSize: 'clamp(18px, 2vw, 25px)', // Lower minimum, higher vw percentage
         color: '#16213e',
         fontWeight: '600',
         flexShrink: 1,

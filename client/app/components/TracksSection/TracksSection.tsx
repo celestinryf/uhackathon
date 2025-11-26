@@ -27,7 +27,7 @@ export default function TracksSection() {
   ];
 
   return (
-    <section id="tracks" style={{ padding: '80px 20px', backgroundColor: '#d4f1f4', textAlign: 'center', paddingBottom: '200px' }}>
+    <section id="tracks" style={{ padding: '80px 20px', textAlign: 'center', paddingBottom: '200px' }}>
       <style>{`
         .card-container {
           perspective: 1000px;
