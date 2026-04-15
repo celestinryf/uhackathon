@@ -261,7 +261,7 @@ export default function VolunteerForm() {
             </h2>
             <p style={{ fontSize: '14px', color: '#666', marginTop: '4px' }}>Select all that apply</p>
 
-            {['Saturday morning', 'Saturday afternoon', 'Saturday evening', 'Sunday morning', 'Sunday afternoon'].map((val) => (
+            {['Friday morning', 'Friday afternoon', 'Friday evening', 'Saturday morning', 'Saturday afternoon'].map((val) => (
               <label key={val} style={{ display: 'block', marginTop: '8px', cursor: 'pointer' }}>
                 <input
                   type="checkbox"
