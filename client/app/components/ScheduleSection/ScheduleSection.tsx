@@ -21,41 +21,40 @@ export default function TracksSection() {
         gap: 'clamp(30px, 5vw, 60px)',
         padding: '0 clamp(10px, 4vw, 40px)'
       }}>
-        {/* Saturday */}
+        {/* Friday */}
         <div>
-          <h3 style={{ 
-            fontSize: 'clamp(18px, 5vw, 36px)', 
+          <h3 style={{
+            fontSize: 'clamp(18px, 5vw, 36px)',
             fontWeight: '600',
-            marginBottom: 'clamp(20px, 4vw, 40px)', 
-            color: '#16213e' 
+            marginBottom: 'clamp(20px, 4vw, 40px)',
+            color: '#16213e'
           }}>
-            Saturday
+            Day 1 — Friday, May 22
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
-            <ScheduleItem time="9:00AM – 10:00AM" event="Check-In" />
-            <ScheduleItem time="10:00AM – 10:30AM" event="Opening Ceremony" />
-            <ScheduleItem time="12:30PM – 2:30PM" event="Lunch" />
-            <ScheduleItem time="1:30PM – 4:15PM" event="Workshops" />
-            <ScheduleItem time="5:00PM – 6:00PM" event="Dinner" />
+            <ScheduleItem time="10:00AM" event="Opening Ceremony & Kickoff" />
+            <ScheduleItem time="11:00AM" event="Hacking Begins, Theme Revealed" />
+            <ScheduleItem time="12:00PM" event="Lunch" />
+            <ScheduleItem time="5:00PM" event="Day 1 Wrap-Up" />
           </div>
         </div>
 
-        {/* Sunday */}
+        {/* Saturday */}
         <div>
-          <h3 style={{ 
-            fontSize: 'clamp(18px, 5vw, 36px)', 
+          <h3 style={{
+            fontSize: 'clamp(18px, 5vw, 36px)',
             fontWeight: '600',
-            marginBottom: 'clamp(20px, 4vw, 40px)', 
-            color: '#16213e' 
+            marginBottom: 'clamp(20px, 4vw, 40px)',
+            color: '#16213e'
           }}>
-            Sunday
+            Day 2 — Saturday, May 23
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(14px, 3vw, 24px)' }}>
-            <ScheduleItem time="9:00AM – 10:00AM" event="Breakfast" />
-            <ScheduleItem time="1:30PM" event="Submissions Due!" />
-            <ScheduleItem time="1:30PM – 3:30PM" event="Judging" />
-            <ScheduleItem time="1:30PM – 2:30PM" event="Lunch" />
-            <ScheduleItem time="3:30PM – 4:30PM" event="Closing Ceremony" />
+            <ScheduleItem time="10:00AM" event="Doors Open, Hacking Resumes" />
+            <ScheduleItem time="12:00PM" event="Lunch, Hacking Ends, Devpost Submissions Due, Presentations & Judging Begin" />
+            <ScheduleItem time="3:00PM" event="Scores Finalized" />
+            <ScheduleItem time="4:00PM" event="Closing Ceremony & Awards" />
+            <ScheduleItem time="5:00PM" event="Event Close" />
           </div>
         </div>
       </div>

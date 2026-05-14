@@ -352,10 +352,10 @@ export default function JudgeForm() {
               when are you available? <span style={{ color: 'red' }}>*</span>
             </h2>
             <p style={{ fontSize: '14px', color: '#666', marginTop: '4px' }}>
-              Judging typically happens on Sunday afternoon
+              Judging typically happens on Saturday afternoon
             </p>
 
-            {['Saturday afternoon', 'Sunday afternoon', 'Both days', 'Flexible'].map((val) => (
+            {['Friday afternoon', 'Saturday afternoon', 'Both days', 'Flexible'].map((val) => (
               <label key={val} style={{ display: 'block', marginTop: '8px', cursor: 'pointer' }}>
                 <input
                   type="radio"

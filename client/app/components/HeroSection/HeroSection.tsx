@@ -52,7 +52,7 @@ export default function HeroSection() {
             marginTop: "2vh",
           }}
         >
-          April, 2026
+          May 22-23, 2026
         </h2>
 
         <p

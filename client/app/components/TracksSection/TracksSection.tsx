@@ -7,22 +7,34 @@ export default function TracksSection() {
       color: "#a8e6cf",
       darkColor: "#56ab91",
       division: 1,
-      title: "All-Star",
-      tagline: "I play out of the sandbox, always innovating, and ideating something new.",
+      title: "Production Track",
+      tagline: "For projects that are polished, practical, and ready to be used in the real world.",
       description: "Some problems need a bold idea, and an even bolder build. This track is your playground for innovation! The most unconventional ideas are welcome, as long as they're solving real problems.",
       fullDescription: "Whether you're pushing the boundaries of AI or pioneering something new, connect imagination with technical ingenuity. The Inventor champions projects that embrace experimentation, harness emerging technologies, and challenge the norm.",
-      topics: "Artificial Intelligence, AR/VR/XR, Quantum Computing, Blockchain, Web3, Biotechnology, Robotics, Cybersecurity, Space Exploration, etc."
+      topics: "Artificial Intelligence, AR/VR/XR, Quantum Computing, Blockchain, Web3, Biotechnology, Robotics, Cybersecurity, Space Exploration, etc.",
+      prizes: [
+        "CORSAIR VENGEANCE LPX DDR4 RAM 16GB",
+        "Samsung 990 EVO Plus 1TB SSD",
+        "Acer Nitro 27\" QHD Gaming Monitor",
+        "Edifier MR4 Powered Studio Monitor Speakers"
+      ]
     },
     {
       icon: "🌱",
       color: "#dcc6e0",
       darkColor: "#9b7ea6",
       division: 2,
-      title: "The Rookie",
-      tagline: "My blanket forts welcome all, where playing together means growing together.",
+      title: "Experimental Track",
+      tagline: "For projects that are creative, ambitious, weird, risky, or technically interesting.",
       description: "Powerful solutions bring us closer and help us thrive. This track celebrates technology's role in strengthening our ties to each other, our communities, and the world around us, while also empowering ourselves.",
       fullDescription: "It's human-centered and fosters belonging, bridges gaps, and unlocks personal and collective growth. The Advocate builds tools that unite, uplift, and drive positive, lasting change.",
-      topics: "Friendship, Mental & Physical Wellness, Peer-to-Peer Interactions, Neighborhoods, Homelessness, Activism, Civic Technology, Learning, Sustainability, Education, Childhood Development, Environment, Climate Change, etc."
+      topics: "Friendship, Mental & Physical Wellness, Peer-to-Peer Interactions, Neighborhoods, Homelessness, Activism, Civic Technology, Learning, Sustainability, Education, Childhood Development, Environment, Climate Change, etc.",
+      prizes: [
+        "Glorious Model O Wireless Gaming Mouse",
+        "Apple AirPods 4",
+        "FUDONI 1080P Projector with WiFi and Bluetooth",
+        "Elgato Wave:3 USB Condenser Microphone"
+      ]
     }
   ];
 
@@ -212,6 +224,15 @@ export default function TracksSection() {
                   <div className="topics-section">
                     <div className="topics-title">Topics to Consider:</div>
                     <div className="topics-list">{track.topics}</div>
+                  </div>
+
+                  <div className="topics-section">
+                    <div className="topics-title">Prizes include:</div>
+                    <ul className="topics-list" style={{ paddingLeft: '20px', margin: 0 }}>
+                      {track.prizes.map(prize => (
+                        <li key={prize}>{prize}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>

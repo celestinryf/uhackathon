@@ -491,7 +491,7 @@ export default function RegistrationForm() {
         {pg === 7 && (
           <div style={{ ...faded, textAlign: 'center' }}>
             <h2 style={{ fontSize: '20px', marginBottom: '10px' }}>thank you for supporting UHackathon!</h2>
-            <p>We can't wait to see you in April!</p>
+            <p>We can't wait to see you in May!</p>
 
             <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '16px' }}>
               <a
