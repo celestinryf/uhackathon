@@ -161,7 +161,7 @@ export default function RegistrationForm() {
           <div style={faded}>
             <h1 style={{ fontSize: '28px', color: '#7dbaff', marginBottom: '10px' }}>Hi!</h1>
             <p style={{ fontSize: '18px' }}>Complete this form to register for UHackathon @ UWT 2026</p>
-            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/FUhmBsn2Ew</div>
+            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/gUaUfxCQhj</div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <button
                 onClick={nxt}

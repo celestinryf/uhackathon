@@ -168,7 +168,7 @@ export default function VolunteerForm() {
           <div style={faded}>
             <h1 style={{ fontSize: '28px', color: '#7dffb9', marginBottom: '10px' }}>Volunteer!</h1>
             <p style={{ fontSize: '18px' }}>Help make UHackathon @ UWT 2026 amazing</p>
-            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/FUhmBsn2Ew</div>
+            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/gUaUfxCQhj</div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <button
                 onClick={nxt}

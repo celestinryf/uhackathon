@@ -158,7 +158,7 @@ export default function JudgeForm() {
           <div style={faded}>
             <h1 style={{ fontSize: '28px', color: '#b97dff', marginBottom: '10px' }}>Judge Application</h1>
             <p style={{ fontSize: '18px' }}>Help us evaluate amazing projects at UHackathon @ UWT 2026</p>
-            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/FUhmBsn2Ew</div>
+            <div style={{ opacity: 0.6, marginTop: '10px' }}>join the discord: discord.gg/gUaUfxCQhj</div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <button
                 onClick={nxt}

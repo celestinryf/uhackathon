@@ -74,7 +74,7 @@ export default function FormSelector() {
           </h1>
           <p style={{ fontSize: '18px', marginBottom: '10px' }}>Choose your registration type</p>
           <div style={{ opacity: 0.6, fontSize: '14px' }}>
-            join the discord: discord.gg/FUhmBsn2Ew
+            join the discord: discord.gg/gUaUfxCQhj
           </div>
         </div>
 
