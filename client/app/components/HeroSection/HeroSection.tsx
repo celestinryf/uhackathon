@@ -1,14 +1,6 @@
 "use client";
 
 export default function HeroSection() {
-  const scrollToForm = () => {
-    const el = document.getElementById("form");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      window.history.pushState(null, "", "#form");
-    }
-  };
-
   return (
     <section
       id="hero"
@@ -70,59 +62,6 @@ export default function HeroSection() {
         </p>
       </div>
 
-      {/* Register Button */}
-      <button
-        onClick={scrollToForm}
-        style={{
-          position: 'absolute',
-          bottom: '5vh',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
-          border: 'none',
-          color: '#fff',
-          padding: '12px 24px',
-          fontSize: 'clamp(14px, 1.2vw, 18px)',
-          fontFamily: "'Poppins', sans-serif",
-          fontWeight: 500,
-          borderRadius: '30px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          transition: 'all 0.3s ease',
-          backdropFilter: 'blur(10px)',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-          e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
-          e.currentTarget.style.transform = 'translateX(-50%) translateY(0)';
-        }}
-      >
-        Register Here
-        <span style={{
-          fontSize: '20px',
-          lineHeight: '1',
-          animation: 'bounce 2s infinite',
-        }}>
-          ⌄
-        </span>
-      </button>
-
-      {/* Bounce animation */}
-      <style jsx>{`
-        @keyframes bounce {
-          0%, 100% {
-            transform: translateY(-8px);
-          }
-          50% {
-            transform: translateY(-4px);
-          }
-        }
-      `}</style>
     </section>
   );
 }

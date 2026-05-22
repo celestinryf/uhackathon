@@ -6,12 +6,12 @@ export default function TracksSection() {
       icon: "🔧",
       color: "#a8e6cf",
       darkColor: "#56ab91",
-      division: 1,
+      banner: "DEV TOOLS",
       title: "Production Track",
       tagline: "For projects that are polished, practical, and ready to be used in the real world.",
-      description: "Some problems need a bold idea, and an even bolder build. This track is your playground for innovation! The most unconventional ideas are welcome, as long as they're solving real problems.",
-      fullDescription: "Whether you're pushing the boundaries of AI or pioneering something new, connect imagination with technical ingenuity. The Inventor champions projects that embrace experimentation, harness emerging technologies, and challenge the norm.",
-      topics: "Artificial Intelligence, AR/VR/XR, Quantum Computing, Blockchain, Web3, Biotechnology, Robotics, Cybersecurity, Space Exploration, etc.",
+      description: "Theme: Dev Tools. Build something that makes developers' lives easier — CLIs, extensions, libraries, debuggers, automations, anything that makes building software faster or better.",
+      fullDescription: "Ship something polished and practical. The strongest projects here solve a real pain point in the developer workflow and are ready to be picked up and used on day one.",
+      topics: "Developer Tooling, CLIs, IDE & Editor Extensions, Libraries & SDKs, Build & CI/CD, Debugging & Observability, Automation, API Tooling, etc.",
       prizes: [
         "CORSAIR VENGEANCE LPX DDR4 RAM 16GB",
         "Samsung 990 EVO Plus 1TB SSD",
@@ -23,12 +23,12 @@ export default function TracksSection() {
       icon: "🌱",
       color: "#dcc6e0",
       darkColor: "#9b7ea6",
-      division: 2,
+      banner: "NO THEME",
       title: "Experimental Track",
       tagline: "For projects that are creative, ambitious, weird, risky, or technically interesting.",
-      description: "Powerful solutions bring us closer and help us thrive. This track celebrates technology's role in strengthening our ties to each other, our communities, and the world around us, while also empowering ourselves.",
-      fullDescription: "It's human-centered and fosters belonging, bridges gaps, and unlocks personal and collective growth. The Advocate builds tools that unite, uplift, and drive positive, lasting change.",
-      topics: "Friendship, Mental & Physical Wellness, Peer-to-Peer Interactions, Neighborhoods, Homelessness, Activism, Civic Technology, Learning, Sustainability, Education, Childhood Development, Environment, Climate Change, etc.",
+      description: "No theme — make whatever you want. This track is your playground for the creative, the ambitious, the weird, and the technically interesting.",
+      fullDescription: "Chase the idea you can't stop thinking about. Whether it's risky, unconventional, or just plain fun, this track celebrates experimentation and bold builds with no constraints.",
+      topics: "Anything goes — games, art, hardware hacks, AI experiments, generative tools, simulations, whatever you can dream up.",
       prizes: [
         "Glorious Model O Wireless Gaming Mouse",
         "Apple AirPods 4",
@@ -204,7 +204,7 @@ export default function TracksSection() {
               {/* Front of card */}
               <div className="card-face card-front">
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                  <div className="card-banner">DIVISION {track.division}</div>
+                  <div className="card-banner">{track.banner}</div>
                   <div className="card-icon">{track.icon}</div>
                   <div className="card-title">{track.title}</div>
                   <div className="card-tagline">{track.tagline}</div>
@@ -214,7 +214,7 @@ export default function TracksSection() {
               {/* Back of card */}
               <div className="card-face card-back">
                 <div className="card-back-header">
-                  <div className="card-banner">DIVISION {track.division}</div>
+                  <div className="card-banner">{track.banner}</div>
                 </div>
                 
                 <div className="card-back-content">
