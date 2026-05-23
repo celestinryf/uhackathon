@@ -5,71 +5,71 @@ import { useState } from 'react';
 export default function FAQSection() {
   const leftColumnFaqs = [
     {
-      question: "What is UHackathon?",
-      answer: "A hackathon is an event where students come together to build creative projects over a short period of time. It's a great opportunity to learn new skills, meet other developers, and bring your ideas to life!"
+      question: "When are submissions due?",
+      answer: "Saturday, May 23 at 12:00 PM. Submit on Devpost at uhackathon2026.devpost.com. You can edit until the deadline — submit early to be safe."
     },
     {
-      question: "What is D1 and D2?",
-      answer: "D1 is for more experienced individuals. Graduates and industry professionals are forced into this category, and anyone else is free to compete here as well. D2 is for those less-experienced, like undergraduates and high schoolers."
+      question: "Where do I submit?",
+      answer: "uhackathon2026.devpost.com. Make sure to pick your track (Dev Tools or No Theme) when you submit."
     },
     {
-      question: "When do applications close?",
-      answer: "They don't! You can come without registering, but it helps increase our funding, hence incresing the prize money!"
+      question: "How long is each presentation?",
+      answer: "Around 5 minutes per team, with the exact length confirmed day-of based on the number of teams. Brief judge Q&A follows."
     },
     {
-      question: "Is attending free?",
-      answer: "Yes! Attending is completely free. We provide meals, snacks, and swag throughout the event."
+      question: "Where is judging happening?",
+      answer: "MLG 110 (Milgard Hall, Room 110), Saturday 12:00–3:00 PM. Be in the room early — presentation order is posted in Discord."
     },
     {
-      question: "How big are the teams?",
-      answer: "Teams can be up to 4 people."
+      question: "How big can my team be?",
+      answer: "Up to 4 people. Finalize your team on Devpost when you submit."
     },
     {
-      question: "Do I have to select a track for my project?",
-      answer: "Yes, we have split up the event, so it does matter what track you choose as it will change who judges you and there is no general track."
+      question: "Do I have to pick a track?",
+      answer: "Yes — Dev Tools or No Theme. There is no general track; the track you pick determines who judges your project."
     },
     {
-      question: "What will I eat?",
-      answer: "We'll provide breakfast, lunch, dinner, and snacks throughout the event. Dietary restrictions will be accommodated."
+      question: "Can I use AI tools, libraries, or APIs?",
+      answer: "Yes — existing APIs, libraries, and frameworks (and AI assistants) are fair game. The project code itself must be written during the hackathon."
     },
     {
-      question: "What if I need special accommodations?",
-      answer: "Please let us know in your application or email us at [email] and we'll do our best to accommodate your needs."
+      question: "What if I started coding before the event?",
+      answer: "Project code needs to be written during the hackathon. Pulling in pre-existing libraries and APIs is fine; bringing in your own pre-built codebase is not."
     }
   ];
 
   const rightColumnFaqs = [
     {
-      question: "Am I eligible to attend?",
-      answer: "Everyone regardless of experience is welcome! We have D1 and D2 to keep competition fair. Industry professionals and graduates are forced into D1, whereas D2 is undergraduate students."
+      question: "Can I submit late?",
+      answer: "No. Devpost closes at noon Saturday and late submissions will not be judged."
     },
     {
-      question: "Is UHackathon fully in-person this year?",
-      answer: "Yes, UHackathon will be fully in-person this year at [TBD, but in Tacoma]."
+      question: "Do I have to do a live demo?",
+      answer: "Live demo is preferred. If you can't, lean on a demo video in your Devpost submission so judges can still see it work."
     },
     {
-      question: "What if I don't know how to code?",
-      answer: "That's okay! Hackathons are for everyone. We'll have workshops and mentors to help you learn. Many successful projects combine coding with design, business, and other skills."
+      question: "What if my demo breaks during presentations?",
+      answer: "That's exactly why we recommend including a backup demo video and screenshots in your Devpost write-up — you'll always have a fallback."
     },
     {
-      question: "Do I have to submit a project if I attend?",
-      answer: "No! While we encourage everyone to submit a project, it's not required. You can attend workshops, network, and learn without submitting."
+      question: "How are projects scored?",
+      answer: "5 criteria × 5 points each = 25 points total: Innovation, Technical Approach, Potential Impact, Design & UX, and Presentation. See the Judging Criteria section for details."
     },
     {
-      question: "Are we allowed to build on past projects?",
-      answer: "All code must be written during the hackathon. However, you can use existing APIs, libraries, and frameworks."
+      question: "What is the tiebreaker?",
+      answer: "In a tie, the project with the higher Technical Approach & Stack score wins."
+    },
+    {
+      question: "Where can I find teammates?",
+      answer: "Hop into the Discord — there's a team-finding channel and people are looking right up through Friday's kickoff."
     },
     {
       question: "Is sleeping space provided?",
-      answer: "No, unfortunatly due to rules of all venues in the area there is no sleeping or staying allowed. Attendees will have to go home and come back the next day."
+      answer: "No — venue rules don't allow overnight stays. Head home Friday evening and come back Saturday morning when doors open at 10 AM."
     },
     {
-      question: "What is the code of conduct?",
-      answer: "All participants must follow the MLH Code of Conduct. We're committed to providing a safe and inclusive environment for everyone."
-    },
-    {
-      question: "Is there group registration?",
-      answer: "No, just have everyone in your group register individually and you can finalize your team when submitting on Devpost day-of."
+      question: "What's the code of conduct?",
+      answer: "Be respectful to other hackers, judges, mentors, and organizers. No plagiarism. Project code must be written during the event. Issues? Find an organizer in MLG 110 or message us on Discord."
     }
   ];
 

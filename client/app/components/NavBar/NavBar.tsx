@@ -26,9 +26,12 @@ export default function NavBar() {
 
   const navItems = [
     { label: "Home", id: "hero" },
-    { label: "About", id: "about" },
     { label: "Tracks", id: "tracks" },
     { label: "Schedule", id: "schedule" },
+    { label: "Submit", id: "submission" },
+    { label: "Present", id: "presentations" },
+    { label: "Judging", id: "judging" },
+    { label: "Resources", id: "resources" },
     { label: "FAQ", id: "faq" },
   ];
 

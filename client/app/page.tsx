@@ -7,15 +7,19 @@ import AboutSection from './components/AboutSection/AboutSection';
 import TracksSection from './components/TracksSection/TracksSection';
 import FAQSection from './components/FAQSection/FAQSection';
 import ScheduleSection from './components/ScheduleSection/ScheduleSection';
+import SubmissionSection from './components/SubmissionSection/SubmissionSection';
+import PresentationsSection from './components/PresentationsSection/PresentationsSection';
+import JudgingSection from './components/JudgingSection/JudgingSection';
+import ResourcesSection from './components/ResourcesSection/ResourcesSection';
 
 export default function Page() {
   return (
-    <div style={{ 
-      fontFamily: "'Work Sans', sans-serif", 
-      color: '#fff', 
+    <div style={{
+      fontFamily: "'Work Sans', sans-serif",
+      color: '#fff',
       position: 'relative',
-      overflowX: 'hidden',  // Add this
-      width: '100%'          // Add this
+      overflowX: 'hidden',
+      width: '100%'
     }}>
       <NavBar />
       <div id="hero"><HeroSection /></div>
@@ -23,6 +27,10 @@ export default function Page() {
       <div className="bg-[#d4f1f4]">
         <div id="tracks"><TracksSection /></div>
         <div id="schedule"><ScheduleSection /></div>
+        <div id="submission"><SubmissionSection /></div>
+        <div id="presentations"><PresentationsSection /></div>
+        <div id="judging"><JudgingSection /></div>
+        <div id="resources"><ResourcesSection /></div>
       </div>
       <div id="faq"><FAQSection /></div>
     </div>
